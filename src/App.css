@@ -13,6 +13,11 @@
   }
 }
 
+.forScroll {
+  max-height: 90vh; 
+  overflow: scroll"
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
