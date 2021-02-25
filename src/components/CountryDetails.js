@@ -51,6 +51,14 @@ class CountryDetails extends Component {
                 {country.map((singleCountry, index) => {
                     return <div key={index}>
                         <h1>{singleCountry.name.common}</h1>
+                        <h3>Capital: {singleCountry.capital}</h3>
+                        <h3>Area: {singleCountry.area}</h3>
+                        <div>Borders: <ul>
+                                        {singleCountry.borders.map((singleBorder) => {
+                                            return <li>{singleBorder}</li>
+                                        })}
+                                    </ul>
+                        </div>
                     </div>
                 })}
              
@@ -61,3 +69,5 @@ class CountryDetails extends Component {
 }
 
 export default CountryDetails
+
+
